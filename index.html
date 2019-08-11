@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Page Title -->
+    <title>Page with small sidebar</title>
+
+    <!-- Latest version of Bootstrap from getbootstrap.com -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom style sheet for creating the sidebar -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ##################################################### -->
+    <!-- First section of the page - no sidebar included -->
+    <div class="container-flex bg-secondary text-white text-center p-5">
+      <h1>This is a section of text outside the main sidebar section</h1>
+    </div>
+
+    <!-- ##################################################### -->
+    <!-- Section of text with sidebar included -->
+    <!-- Everything in this section must be enclosed in the 'wrapper'-->
+    <div class="wrapper py-3">
+      <!-- Sidebar -->
+      <!-- If the ID is changed here, it should also be changed in the .js -->
+      <nav class="p-3 bg-primary text-white" id="sidebar">
+        <div class="sidebar-header">
+          <h3>This is a sidebar</h3>
+        </div>
+        <p>You can add whatever content you would like here</p>
+      </nav>
+
+      <!-- Page Content -->
+      <div class="container px-5" id="content">
+        <!-- Button to toggle the opening/closing of the sidebar -->
+        <div class="container">
+          <!-- If the ID is changed here, it should also be changed in the .js -->
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <span>Toggle Sidebar</span>
+          </button>
+        </div>
+        <!-- Text below the button -->
+        <div class="container">
+          This is some dummy text
+        </div>
+      </div>
+    </div>
+
+    <!-- ##################################################### -->
+    <!-- Last section of the page - no sidebar included -->
+    <div class="container-flex bg-secondary text-white text-center p-5">
+      <h1>This is another section of text outside the main sidebar section</h1>
+    </div>
+
+    <!-- ##################################################### -->
+    <!-- Javascript requirements -->
+    <!-- jQuery from Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Custom Javascript file -->
+    <script type="text/javascript" src="script.js"></script>
+
+
+  </body>
+</html>

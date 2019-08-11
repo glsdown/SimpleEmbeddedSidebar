@@ -1,0 +1,21 @@
+/* Styling for the entire section - required to ensure sidebar appears
+  next to the main text in the section */
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Sidebar requirements - here you can change the width as required */
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  margin-left: -250px;
+
+  /* Optional - choose the transition speed and style */
+  transition: margin-left 0.5s ease-in-out;
+}
+
+/* Styling to 'move' the sidebar onto the page when the button is clicked */
+#sidebar.active {
+  margin-left: 0;
+}
